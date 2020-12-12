@@ -11,6 +11,8 @@ window.onclick = function(event) {
   }
 }
 
+
+
 btnSchedule.addEventListener("mouseover", function(){ scheduleModal.style.display = "block"; })
 btnSchedule.addEventListener("mouseout", function(){ scheduleModal.style.display = "none"; })
 

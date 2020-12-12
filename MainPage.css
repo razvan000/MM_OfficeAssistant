@@ -4,6 +4,7 @@
     border-radius: 25px;
     box-sizing: border-box;
     color: #4095c6;
+    z-index: 2;
     background-color:rgb(30, 30, 30); /*#4095c6*/
     border-color: #4095c6;
     border-style: solid;
@@ -82,4 +83,126 @@ h1 {
 [id="infoModal"] {
     left: 75vw;
     top: 80vh;
+}
+
+#animation {
+    margin-top:8vh;
+    margin-left: 17vw;
+    padding-left: 10vw;
+    box-sizing: border-box;
+    
+}
+
+#minutes{
+    animation: clockBar 1s  infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom left;
+    
+}
+
+#hours{
+    animation: clockBar 2s  infinite linear;
+    transform-box: fill-box;
+
+}
+
+#bar4,#bar2{
+    animation: bar 1s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#bar5{
+    animation: bar5 1.5s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#bar1{
+    animation: bar1 1s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#bar3{
+    animation: bar 1s infinite alternate-reverse;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+#arm{
+    animation: arm 1.5s infinite alternate-reverse;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+#Vector_18{
+    animation: animation2 10s ease infinite alternate;
+}
+#small_plant #Vector_47{
+    animation: animation 10s ease infinite alternate;
+}
+
+#Vector_22{
+    fill:mediumslateblue
+}
+
+@keyframes arm{
+    from{
+        transform:rotateZ(0deg) ;
+    }
+    to{
+        transform: rotateZ(37deg);
+    }
+}
+
+
+@keyframes animation {
+    0%     {fill:#6FFF63;}
+    33%  {fill:#37BE96;}
+    66%  {fill:#637BE9;}
+    100%  {fill:#0E52B8;}
+}
+
+@keyframes animation2 {
+    0%     {fill:#692F56;}
+    33%  {fill:#8D1EB5;}
+    66%  {fill:#4E1EB5;}
+    100%  {fill:#2A66C0;}
+}
+
+@keyframes clockBar{
+    from {
+        transform: rotateZ(0deg);
+    
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bar{
+    from{
+        transform: scaleY(1)
+    }
+    to{
+        transform: scaleY(1.5)
+    }
+}
+
+@keyframes bar5{
+    from{
+        transform: scaleY(1)
+    }
+    to{
+        transform: scaleY(0.4)
+    }
+}
+
+@keyframes bar1{
+    from{
+        transform: scaleY(1)
+    }
+    to{
+        transform: scaleY(3)
+    }
 }
