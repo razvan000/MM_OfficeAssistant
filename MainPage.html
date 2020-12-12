@@ -2,10 +2,44 @@
 <html>
     <head>
         <link rel="stylesheet" href="MainPage.css">
+        <title>Office Assistant</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body {
+              background-image: url('Assets/main_background.png');
+            }
+        </style>
     </head>
     <body>
-        <h1>Header</h1>
-        <p>Text</p>
+        <div>
+            <h1>Welcome to your Office Assistant</h1>
+        </div>
+        <div>
+            <input type="button" value="Schedule Meeting" class="btnSchedule" id="btn1">
+            <input type="button" value="Reserve Room" class="btnReserve" id="btn2">
+            <input type="button" value="Useful Information" class="btnInfo" id="btn3">
+
+            <div id="scheduleModal" class="modal">
+                <div class="modal-content">
+                  <p>Allows the user to schedule a meeting at a certain time in a specific room</p>
+                </div>
+            </div>
+
+            <div id="reserveModal" class="modal">
+                <div class="modal-content">
+                  <p>Allows the user to reserve a room for a specified time interval</p>
+                </div>
+            </div>
+
+            <div id="infoModal" class="modal">
+                <div class="modal-content">
+                  <p>Shows the user some useful information regarding the office</p>
+                </div>
+            </div>
+
+            <script src="Popup.js"></script>
+        </div>
     </body>
 </html>
 

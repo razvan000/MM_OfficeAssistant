@@ -1,0 +1,85 @@
+[type="button"] {
+    font-size: 20px;
+    padding: 10px 24px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #4095c6;
+    background-color:rgb(30, 30, 30); /*#4095c6*/
+    border-color: #4095c6;
+    border-style: solid;
+    text-align:center;
+    position: fixed;
+    bottom: 5vh;
+    transform: translate(-50%, -50%);
+    font-family: 'Kanit';
+    outline: none;
+    text-shadow: #000 1px 1px 10px;
+    cursor: pointer;
+}
+[type="button"]:hover{
+    background-color:#204c66;
+}
+[type="button"]:active{
+    background-color:#153446;
+}
+
+h1 {
+    position: fixed;
+    font-size: 50px;
+    color:#3583af;
+    left:50vw;
+    top: 5vh;
+    transform: translate(-50%, -50%);
+    font-family: 'Kanit';
+    white-space: nowrap;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.btnSchedule {
+    left: 25vw;
+}
+.btnReserve {
+    left: 50vw;
+}
+.btnInfo {
+    left: 75vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    left: 50vw;
+    top: 80vh;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    text-align: center;
+}
+  
+.modal-content {
+    background-color: rgb(30, 30, 30);
+    border-radius: 25px;
+    border-color: #4095c6;
+    border-style: solid;
+    color: #4095c6;
+    font-family: 'Kanit';
+    margin: 15% auto;
+    padding: 10px;
+    width: 25%;
+    height: 12%;
+    text-shadow: #000 1px 1px 10px;
+}
+
+[id="scheduleModal"] {
+    left: 25vw;
+    top: 80vh;
+}
+[id="reserveModal"] {
+    left: 50vw;
+    top: 80vh;
+}
+[id="infoModal"] {
+    left: 75vw;
+    top: 80vh;
+}
