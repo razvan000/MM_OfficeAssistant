@@ -1,0 +1,115 @@
+[type="button"] {
+    font-size: 20px;
+    padding: 10px 24px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #4095c6;
+    z-index: 2;
+    background-color:rgb(30, 30, 30); /*#4095c6*/
+    border-color: #4095c6;
+    border-style: solid;
+    text-align:center;
+    position: fixed;
+    bottom: 5vh;
+    transform: translate(-50%, -50%);
+    font-family: 'Kanit';
+    outline: none;
+    text-shadow: #000 1px 1px 10px;
+    cursor: pointer;
+}
+[type="button"]:hover{
+    background-color:#204c66;
+}
+[type="button"]:active{
+    background-color:#153446;
+}
+
+[id="btnSaveMeeting"] {
+    left: 50vw;
+}
+
+.form {
+    padding-top: 10vw;
+    padding-left: 39.75vw;
+}
+
+.label {
+    font-size: 20px;
+    color: #4095c6;
+    text-align:center;
+    font-family: 'Kanit';
+    outline: none;
+    text-shadow: #000 1px 1px 10px;
+}
+
+.inputInfo {
+    background-color:rgb(30, 30, 30);
+    border-color: #4095c6;
+    border-style: solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 0.8cm;
+    outline: none;
+    color: #4095c6;
+    font-family: 'Kanit';
+    text-shadow: #000 1px 1px 10px;
+    font-size: 20px;
+    padding-left: 0.3cm;
+}
+
+[id="meetingTime"] {
+    width: 260px;
+    padding-left: 0.2cm;
+}
+
+.background_box{
+    left: 38.5vw;
+    top: 20vh;
+    width:22.5vw;
+    height:60vh;
+    z-index: -1;
+    background-color:rgb(30, 30, 30);
+    border-color: #4095c6;
+    border-style: solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.dropdown {
+    background-color:rgb(30, 30, 30);
+    border-color: #4095c6;
+    border-style: solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 0.8cm;
+    outline: none;
+    color: #4095c6;
+    font-family: 'Kanit';
+    text-shadow: #000 1px 1px 10px;
+    font-size: 20px;
+    padding-left: 0.1cm;
+}
+
+[id="btnSelectRoom"] {
+    left: 46vw;
+    top: 73vh;
+    height: 55px;
+    text-align: center;
+    color:red;
+    border-color: red;
+}
+[id="btnSelectRoom"]:hover{
+    background-color:#850707;
+}
+[id="btnSelectRoom"]:active{
+    background-color:#4e0606;
+}
+
+.dropdown, [id="locationLabel"]{
+    position:relative;
+    left: 3.75vw;
+}
+[id="btnSelectRoom"] {
+    left: 50vw;
+}

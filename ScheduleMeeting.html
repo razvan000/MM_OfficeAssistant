@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ScheduleMeeting.css">
+        <title>Office Assistant</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body {
+              background-image: url('Assets/main_background.png');
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" id="btnSaveMeeting" value="Save Meeting">
+        <div>
+            <form class="form">
+                <label class="label" for="meetingName">Meeting Name:</label><br>
+                <input class="inputInfo" type="text" id="meetingName" name="meetingName"><br><br>
+                <label class="label" for="attendants">Attendants:</label><br>
+                <input class="inputInfo" type="text" id="attendants" name="attendants"><br><br>
+                <label class="label" for="meetingTime">Select Time:</label><br>
+                <input class="inputInfo" type="datetime-local" id="meetingTime" name="meetingTime"><br><br>
+                <label class="label" for="location" id="locationLabel">Location:</label><br>
+                <select class="dropdown" name="pickLocation" id="pickLocation">
+                    <option value="online">Online</option>
+                    <option value="meetingRoom">Meeting Room</option>
+                </select>
+                <input type="button" id="btnSelectRoom" value="Select Room">
+            </form>
+        </div>
+        <div class="background_box">
+        </div>
+        <script src="ShowReserveButton.js"></script>
+    </body>
+</html>
+
+<!-- Welcome Page TEXT + ANIMATION + 3 BUTTONS : Schedule Meeting, Reserve Room, Useful Info -->

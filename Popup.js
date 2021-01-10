@@ -11,13 +11,17 @@ window.onclick = function(event) {
   }
 }
 
-
-
 btnSchedule.addEventListener("mouseover", function(){ scheduleModal.style.display = "block"; })
 btnSchedule.addEventListener("mouseout", function(){ scheduleModal.style.display = "none"; })
+btnSchedule.onclick = function () {
+  location.href = "ScheduleMeeting.html";
+};
 
 btnReserve.addEventListener("mouseover", function(){ reserveModal.style.display = "block"; })
 btnReserve.addEventListener("mouseout", function(){ reserveModal.style.display = "none"; })
+btnReserve.onclick = function () {
+  location.href = "ReserveRoom.html";
+};
 
 btnInfo.addEventListener("mouseover", function(){ infoModal.style.display = "block"; })
 btnInfo.addEventListener("mouseout", function(){ infoModal.style.display = "none"; })
