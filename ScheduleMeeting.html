@@ -12,7 +12,7 @@
         </style>
     </head>
     <body>
-        <input type="button" id="btnSaveMeeting" value="Save Meeting">
+        <input class="fancy_button" type="button" id="btnSaveMeeting" value="Save Meeting">
         <div>
             <form class="form">
                 <label class="label" for="meetingName">Meeting Name:</label><br>
@@ -26,13 +26,33 @@
                     <option value="online">Online</option>
                     <option value="meetingRoom">Meeting Room</option>
                 </select>
-                <input type="button" id="btnSelectRoom" value="Select Room">
+                <input class="fancy_button" type="button" onClick="document.getElementById('reserveRoom').scrollIntoView();" id="btnSelectRoom" value="Select Room">
             </form>
         </div>
         <div class="background_box">
+        </div>
+        <div id="reserveRoom">
+            <div class="grid-container">
+                <div class="grid-item" id="gi1">Meeting Room 1</div>
+                <div class="grid-item" id="gi2">Meeting Room 2</div>
+                <div class="grid-item" id="gi3">Bathroom</div>
+                <div class="grid-item" id="gi4">Main Office</div>
+                <div class="grid-item" id="gi5">Hallway</div>
+                <div class="grid-item" id="gi6">Meeting Room 3</div>
+            </div>
         </div>
         <script src="ShowReserveButton.js"></script>
     </body>
 </html>
 
-<!-- Welcome Page TEXT + ANIMATION + 3 BUTTONS : Schedule Meeting, Reserve Room, Useful Info -->
+<!-- Welcome Page TEXT + ANIMATION + 3 BUTTONS : Schedule Meeting, Reserve Room, Useful Info 
+                <div><input type="button" id="meetingRoom" class="grid-item" value="4"></div>
+                <div><input type="button" class="grid-item" value="5"></div>
+                <div><input type="button" class="grid-item" value="6"></div>
+                <div><input type="button" class="grid-item" value="7"></div>
+                <div><input type="button" class="grid-item" value="8"></div>
+                <div><input type="button" class="grid-item" value="9"></div>
+                <div><input type="button" class="grid-item" value="10"></div>
+                <div><input type="button" class="grid-item" value="11"></div>
+                <div><input type="button" class="grid-item" value="12"></div>
+            -->

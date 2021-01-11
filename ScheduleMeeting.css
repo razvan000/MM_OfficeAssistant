@@ -1,4 +1,8 @@
-[type="button"] {
+html {
+    scroll-behavior: smooth;
+}
+
+.fancy_button {
     font-size: 20px;
     padding: 10px 24px;
     border-radius: 25px;
@@ -17,15 +21,32 @@
     text-shadow: #000 1px 1px 10px;
     cursor: pointer;
 }
-[type="button"]:hover{
+.fancy_button:hover{
     background-color:#204c66;
 }
-[type="button"]:active{
+.fancy_button:active{
     background-color:#153446;
 }
 
 [id="btnSaveMeeting"] {
+    position: relative;
+    left: 49.5vw;
+    top: 95vh;
+}
+[id="btnSelectRoom"] {
+    position:absolute;
     left: 50vw;
+    top: 81vh;
+    height: 55px;
+    text-align: center;
+    color:red;
+    border-color: red;
+}
+[id="btnSelectRoom"]:hover{
+    background-color:#850707;
+}
+[id="btnSelectRoom"]:active{
+    background-color:#4e0606;
 }
 
 .form {
@@ -63,8 +84,8 @@
 }
 
 .background_box{
-    left: 38.5vw;
-    top: 20vh;
+    left: 38vw;
+    bottom: 47.5vh;
     width:22.5vw;
     height:60vh;
     z-index: -1;
@@ -73,7 +94,7 @@
     border-style: solid;
     border-radius: 25px;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
 }
 
 .dropdown {
@@ -91,25 +112,56 @@
     padding-left: 0.1cm;
 }
 
-[id="btnSelectRoom"] {
-    left: 46vw;
-    top: 73vh;
-    height: 55px;
-    text-align: center;
-    color:red;
-    border-color: red;
-}
-[id="btnSelectRoom"]:hover{
-    background-color:#850707;
-}
-[id="btnSelectRoom"]:active{
-    background-color:#4e0606;
-}
 
 .dropdown, [id="locationLabel"]{
     position:relative;
     left: 3.75vw;
 }
-[id="btnSelectRoom"] {
-    left: 50vw;
+
+[id="reserveRoom"] {
+    position: relative;
+    top:100vh;
+}
+
+.grid-container {
+    width: 66vw;
+    height: 50vh;
+    position:relative;
+    left: 15vw;
+    bottom: 20vh;
+    color: aqua;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 0px;
+    column-gap: 0px;
+    
+}
+
+.grid-item {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #4095c6;
+    border-color: #4095c6;
+    border-style: solid;
+    font-family: 'Kanit';
+    text-align: center;
+}
+
+.grid-item:hover {
+    background-color: rgb(10, 50, 190);
+}
+
+[id="gi4"] {
+    grid-column: 1/3;
+    grid-row:2/4;
+}
+[id="gi2"] {
+    grid-column: 2/4;
+}
+[id="gi5"] {
+    grid-row: 3/5;
+}
+[id="gi6"] {
+    grid-column: 1/3;
 }
