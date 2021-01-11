@@ -9,13 +9,3 @@ dropdown.onchange = function () {
         btn.style.visibility = "hidden";
     } else btn.style.visibility = "visible";
 }
-
-
-/*dropdown.onselectionchange = function() {
-    var selectedIndex = dropdown.selectedIndex;
-    if (selectedIndex == 0) {
-        btn.style.visibility = "hidden";
-    } else if (selectedIndex == 1) {
-        btn.style.visibility = "visible";
-    }
-}*/

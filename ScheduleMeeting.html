@@ -13,8 +13,9 @@
     </head>
     <body>
         <input class="fancy_button" type="button" id="btnSaveMeeting" value="Save Meeting">
+        <div id="scheduleMeetingHeader">Schedule Meeting</div>
         <div>
-            <form class="form">
+            <form class="form" id="form">
                 <label class="label" for="meetingName">Meeting Name:</label><br>
                 <input class="inputInfo" type="text" id="meetingName" name="meetingName"><br><br>
                 <label class="label" for="attendants">Attendants:</label><br>
@@ -31,17 +32,20 @@
         </div>
         <div class="background_box">
         </div>
+        <script src="ShowReserveButton.js"></script>
         <div id="reserveRoom">
+            <div id="reserveRoomHeader">Office Layout</div>
             <div class="grid-container">
                 <div class="grid-item" id="gi1">Meeting Room 1</div>
                 <div class="grid-item" id="gi2">Meeting Room 2</div>
                 <div class="grid-item" id="gi3">Bathroom</div>
                 <div class="grid-item" id="gi4">Main Office</div>
                 <div class="grid-item" id="gi5">Hallway</div>
-                <div class="grid-item" id="gi6">Meeting Room 3</div>
+                <div class="grid-item" id="gi7">Meeting Room 3</div>
+                <div class="grid-item" id="gi8">Exit</div>
             </div>
         </div>
-        <script src="ShowReserveButton.js"></script>
+        <script src="SelectRoom.js"></script>
     </body>
 </html>
 
