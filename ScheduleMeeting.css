@@ -31,12 +31,12 @@ html {
 [id="btnSaveMeeting"] {
     position: relative;
     left: 49.5vw;
-    top: 95vh;
+    top: 90vh;
 }
 [id="btnSelectRoom"] {
     position:absolute;
-    left: 50vw;
-    top: 81vh;
+    left: 49.5vw;
+    top: 71vh;
     height: 55px;
     text-align: center;
     color:red;
@@ -52,6 +52,8 @@ html {
 .form {
     padding-top: 10vw;
     padding-left: 39.75vw;
+    position:relative;
+    bottom: 2vh;
 }
 
 .label {
@@ -85,7 +87,7 @@ html {
 
 .background_box{
     left: 38vw;
-    bottom: 47.5vh;
+    bottom: 50vh;
     width:22.5vw;
     height:60vh;
     z-index: -1;
@@ -212,4 +214,12 @@ html {
 }
 [id="scheduleMeetingHeader"]{
     left:33vw;
+}
+
+.canvas {
+    width: 100vw;
+    height: 20vh;
+    position:relative;
+    top: 19vh;
+    border: 0px none black;
 }

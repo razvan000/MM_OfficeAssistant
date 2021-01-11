@@ -14,7 +14,7 @@
     <body>
         <input class="fancy_button" type="button" id="btnSaveMeeting" value="Save Meeting">
         <div id="scheduleMeetingHeader">Schedule Meeting</div>
-        <div>
+        <div id="formDiv">
             <form class="form" id="form">
                 <label class="label" for="meetingName">Meeting Name:</label><br>
                 <input class="inputInfo" type="text" id="meetingName" name="meetingName"><br><br>
@@ -30,8 +30,9 @@
                 <input class="fancy_button" type="button" onClick="document.getElementById('reserveRoom').scrollIntoView();" id="btnSelectRoom" value="Select Room">
             </form>
         </div>
-        <div class="background_box">
-        </div>
+        <div class="background_box"></div>
+        <canvas class="canvas" id="backgroundTransition" style="border:1px solid #000000;"></canvas>
+        <script src="CanvasTransition.js"></script>
         <script src="ShowReserveButton.js"></script>
         <div id="reserveRoom">
             <div id="reserveRoomHeader">Office Layout</div>
