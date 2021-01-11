@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.voice2text{
+    color: lightsteelblue;
+    text-shadow: honeydew;
+    font-size: 1.5vw;
+}
+#container{
+    margin-top: 10%;
+    margin-left: 40%; 
+}
+
+.voice{
+    font-size: 20px;
+    border-radius: 25px;
+    /* margin-top: 10%;
+    margin-left: 40%; */
+    /* box-sizing: border-box; */
+    color: #4095c6;
+    background-color:rgb(30, 30, 30); /*#4095c6*/
+    border-color: #4095c6;
+    border-style: solid; 
+    text-align:center;
+    
+    font-family: 'Kanit';
+    cursor: pointer;
+    text-shadow: #000 1px 1px 10px;
+}
+
+.voice:hover{
+    background-color:#204c66;
+}
+
+.active{
+    background-color:#0888d3;
+}

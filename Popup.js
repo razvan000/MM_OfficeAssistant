@@ -2,7 +2,7 @@ var scheduleModal = document.getElementById("scheduleModal");
 var reserveModal = document.getElementById("reserveModal");
 var infoModal = document.getElementById("infoModal");
 var btnSchedule = document.getElementById("btn1");
-var btnReserve = document.getElementById("btn2");
+var btnChatBot = document.getElementById("btn2");
 var btnInfo = document.getElementById("btn3");
 
 window.onclick = function(event) {
@@ -17,10 +17,10 @@ btnSchedule.onclick = function () {
   location.href = "ScheduleMeeting.html";
 };
 
-btnReserve.addEventListener("mouseover", function(){ reserveModal.style.display = "block"; })
-btnReserve.addEventListener("mouseout", function(){ reserveModal.style.display = "none"; })
-btnReserve.onclick = function () {
-  location.href = "ReserveRoom.html";
+btnChatBot.addEventListener("mouseover", function(){ botModal.style.display = "block"; })
+btnChatBot.addEventListener("mouseout", function(){ botModal.style.display = "none"; })
+btnChatBot.onclick = function () {
+  location.href = "ChatBot.html";
 };
 
 btnInfo.addEventListener("mouseover", function(){ infoModal.style.display = "block"; })

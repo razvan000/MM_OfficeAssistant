@@ -194,11 +194,11 @@ html {
 }
 [id="gi1"]:hover,[id="gi2"]:hover,[id="gi7"]:hover {
     background-color:#204c66;
-    cursor:grab;
+    cursor:pointer;
 }
 [id="gi1"]:active,[id="gi2"]:active,[id="gi7"]:active {
     background-color: #153446;
-    cursor:grabbing;
+    cursor:pointer;
 }
 
 [id="reserveRoomHeader"],[id="scheduleMeetingHeader"] {

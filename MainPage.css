@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+svg{
+    opacity: 0.7;
+}
+
 [type="button"] {
     font-size: 20px;
     padding: 10px 24px;
@@ -30,7 +34,7 @@ html {
 
 h1 {
     position: fixed;
-    font-size: 50px;
+    font-size: 4vw;
     color:#3583af;
     left:50vw;
     top: 5vh;
@@ -43,7 +47,7 @@ h1 {
 .btnSchedule {
     left: 25vw;
 }
-.btnReserve {
+.btnChatBot {
     left: 50vw;
 }
 .btnInfo {
