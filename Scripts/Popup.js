@@ -29,12 +29,6 @@ function finish(){
   timer=null
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 btnSchedule.addEventListener("mouseover", function(){ scheduleModal.style.display = "block"; })
 btnSchedule.addEventListener("mouseout", function(){ scheduleModal.style.display = "none"; })
 btnSchedule.onclick = function () {

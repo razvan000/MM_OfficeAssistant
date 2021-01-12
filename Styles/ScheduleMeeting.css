@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -231,11 +232,11 @@ body {
 
 [id="FeedbackRecording"] {
     position:relative;
-    bottom: 80vh;
+    bottom: 85vh;
     left: 70vw;
 }
 [id="FeedbackRecordingText"] {
-    height: 12vh;
+    height: 18vh;
     width: 20vw;
     word-wrap: normal;
     font-family: 'Kanit';
@@ -273,4 +274,19 @@ body {
     position:relative;
     top:5vh;
     left: 3vw;
+}
+
+.audioButton {
+    position: relative;
+    right: 17vw;
+    bottom: 11vh;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border-color: #4095c6;
+    border-style: solid;
+    text-align:center;
+    font-family: 'Kanit';
+    outline: none;
+    text-shadow: #000 1px 1px 10px;
+    font-size: 15px;
 }

@@ -8,17 +8,22 @@ var selected = 0;
 form.scrollIntoView();
 
 mr1.onclick = function() {
-    mr1.style.backgroundColor = "green";
-    mr2.style.backgroundColor = "#1e1e1e";
-    mr3.style.backgroundColor = "#1e1e1e";
+    if (selected == 0) {
+        mr1.style.backgroundColor = "green";
+        mr2.style.backgroundColor = "#1e1e1e";
+        mr3.style.backgroundColor = "#1e1e1e";
+    
+        btnSelectRoom.style.color = "green";
+        btnSelectRoom.style.borderColor = "green";
+        btnSelectRoom.value = "Room 1 Selected";
+    
+        form.scrollIntoView();
+        selected = 1;
+    } else {
+        
+    }
 
-    btnSelectRoom.style.color = "green";
-    btnSelectRoom.style.borderColor = "green";
-    btnSelectRoom.value = "Room 1 Selected";
 
-    form.scrollIntoView();
-
-    selected = 1;
 }
 
 mr2.onclick = function() {
