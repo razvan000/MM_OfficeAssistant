@@ -3,7 +3,8 @@ document.onkeydown = function(e) {
         case "KeyM":
             location.href = "ScheduleMeeting.html";
             break;
-        case "KeyI":
+        case "KeyP":
+            location.href = "Info.html";
             break;
         case "KeyC":
             location.href = "ChatBot.html";

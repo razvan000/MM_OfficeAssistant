@@ -1,19 +1,11 @@
-/* html {
+html {
     scroll-behavior: smooth;
-} */
-
-.grid-container{
-    width: 70%;
-
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 100vh;
 }
 
 .item > .btnGr{
     cursor: pointer;
     margin-top: 1vh;
-    display: block;
+
     font-size: 1vw;
     padding: 10px 24px;
     border-radius: 25px;
@@ -30,11 +22,7 @@
     text-shadow: #000 1px 1px 10px;
 
 }
+
 .item > .btnGr:hover{
     background-color:#204c66;
 }
-
-.active{
-    background-color:#0888d3;
-}
-

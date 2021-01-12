@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Info.css">
+    <link rel="stylesheet" href="Styles/InfoNew.css">
         <title>Office Assistant</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -16,21 +16,25 @@
 <body>
     <div class="grid-container">
     <div class="item">
-        <video width="90%" height="70%">
+        <video width="85%" height="60%%">
             <source src="Assets/Office Presentation.mp4" type="video/mp4">
                 </video>
     </div>
     <div id="group" class="item">
         <input type="button" value="Pause" class="btnGr" id="pauseBtn">
         <input type="button" value="Play" class="btnGr" id="playBtn">
+        <input type="button" value="Stop" class="btnGr" id="stopBtn">
+        <input type="button" value="Mute" class="btnGr" id="muteBtn">
         <input type="button" value="Play in Slow Motion" class="btnGr" id="slowMoBtn">
 
         <input type="button" value="Initial Speed" class="btnGr" id="initialSpeedBtn">
         <input type="button" value="Fast forward" class="btnGr" id="fastForwardBtn">
         <input type="button" value="Take Screenshot" class="btnGr" id="ssBtn">
+        <input type="button" value="Take Black and White Screenshot" class="btnGr" id="ssBwBtn">
     </div>  
+    
     </div>
     <canvas></canvas>
-    <script src="Info.js"></script>
+    <script src="Scripts/Info.js"></script>
 </body>
 </html>
