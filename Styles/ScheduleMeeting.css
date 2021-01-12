@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-attachment: fixed;
+}
+
 .fancy_button {
     font-size: 20px;
     padding: 10px 24px;
@@ -248,5 +252,25 @@ html {
 }
 [id="svg"]{
     position:relative;
-    left:7.5vw;
+    left:23vw;
+    top: 15vh;
+    cursor: cell;
+}
+[id="ColleaguesList"] {
+    color: #4095c6;
+    font-size:30px;
+    font-family: 'Kanit';
+    outline: none;
+    text-shadow: #000 1px 1px 10px;
+    position:relative;
+    bottom: 160vh;
+    left: 61vw;
+    cursor: grab;
+}
+[id="listHeader"] {
+    color: white;
+    font-size: 15px;
+    position:relative;
+    top:5vh;
+    left: 3vw;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="MainPage.css">
+        <link rel="stylesheet" href="Styles/MainPage.css">
         <title>Office Assistant</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
@@ -115,29 +115,30 @@
                 
         </div>
         <div>
-            <input type="button" value="Schedule Meeting" class="btnSchedule" id="btn1">
-            <input type="button" value="Chat Bot" class="btnChatBot" id="btn2">
-            <input type="button" value="Useful Information" class="btnInfo" id="btn3">
+            <input type="button" value="Schedule Meeting (M)" class="btnSchedule" id="btn1">
+            <input type="button" value="Chat Bot (C)" class="btnChatBot" id="btn2">
+            <input type="button" value="Useful Information (I)" class="btnInfo" id="btn3">
 
             <div id="scheduleModal" class="modal">
                 <div class="modal-content">
-                  <p>Allows the user to schedule a meeting at a certain time in a specific room</p>
+                  <p>Allows the user to schedule a meeting. Press M to go on this page</p>
                 </div>
             </div>
 
             <div id="botModal" class="modal">
                 <div class="modal-content">
-                  <p>Click to get answers to your questions from our bot</p>
+                  <p>Click to get answers to your questions from our bot. Press C to go on this page</p>
                 </div>
             </div>
 
             <div id="infoModal" class="modal">
                 <div class="modal-content">
-                  <p>Shows the user some useful information regarding the office</p>
+                  <p>Shows the user some useful information regarding the office. Press I to go on this page</p>
                 </div>
             </div>
 
-            <script src="Popup.js"></script>
+            <script src="Scripts/Popup.js"></script>
+            <script src="Scripts/ChangePage.js"></script>
         </div>
     </body>
 </html>
