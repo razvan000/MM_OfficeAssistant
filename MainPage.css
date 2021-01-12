@@ -42,6 +42,19 @@ h1 {
     font-family: 'Kanit';
     white-space: nowrap;
     text-shadow: #000 0px 0px 10px;
+
+}
+
+span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+
+}
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .btnSchedule {

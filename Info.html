@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Info.css">
+        <title>Office Assistant</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body {
+              background-image: url('Assets/main_background.png');
+            }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="grid-container">
+    <div class="item">
+        <video width="90%" height="70%">
+            <source src="Assets/Office Presentation.mp4" type="video/mp4">
+                </video>
+    </div>
+    <div id="group" class="item">
+        <input type="button" value="Pause" class="btnGr" id="pauseBtn">
+        <input type="button" value="Play" class="btnGr" id="playBtn">
+        <input type="button" value="Play in Slow Motion" class="btnGr" id="slowMoBtn">
+
+        <input type="button" value="Initial Speed" class="btnGr" id="initialSpeedBtn">
+        <input type="button" value="Fast forward" class="btnGr" id="fastForwardBtn">
+        <input type="button" value="Take Screenshot" class="btnGr" id="ssBtn">
+    </div>  
+    </div>
+    <canvas></canvas>
+    <script src="Info.js"></script>
+</body>
+</html>
