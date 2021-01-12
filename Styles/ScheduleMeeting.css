@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-attachment: fixed;
+}
+
 .fancy_button {
     font-size: 20px;
     padding: 10px 24px;
