@@ -10,7 +10,6 @@
               background-image: url('Assets/main_background.png');
             }
         </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <input class="fancy_button" type="button" id="btnSaveMeeting" value="Save Meeting">
@@ -19,7 +18,7 @@
             <form class="form" id="form">
                 <label class="label" for="meetingName">Meeting Name:</label><br>
                 <input class="inputInfo" type="text" id="meetingName" name="meetingName"><br><br>
-                <label class="label" for="attendants">Attendants:</label><br>
+                <label class="label" for="attendants" id="attendantsText">Attendants:</label><br>
                 <input class="inputInfo" type="text" id="attendants" name="attendants" ondrop="drop(event)" ondragover="allowDrop(event)"><br><br>
                 <label class="label" for="meetingTime">Select Time:</label><br>
                 <input class="inputInfo" type="datetime-local" id="meetingTime" name="meetingTime"><br><br>
@@ -46,8 +45,10 @@
               </svg>
             <div id="FeedbackRecordingText">Psst... Listen to the recording below to hear some 100% authenthic feedback from one of our users</div>
             <audio id="FeedbackRecordingMpeg" controls>
-                <source src="Assets/FeedbackRecording.mp3" type="audio/mpeg">
+                <source id="srcAudio" src="Assets/FeedbackRecording.mp3" type="audio/mpeg">
             </audio>
+            <input type="button" class="audioButton" value="Slower" id="btnSlower">
+            <input type="button" class="audioButton" value="Faster" id="btnFaster">
             <script src="Scripts/ShowAudioFile.js"></script>
         </div>
         <script src="Scripts/CanvasTransition.js"></script>
@@ -76,6 +77,7 @@
         <script src="Scripts/SelectRoom.js"></script>
         <script src="Scripts/SaveMeeting.js"></script>
         <script src="Scripts/ShowColleagues.js"></script>
+        <script src="Scripts/AudioEffects.js"></script>
     </body>
 </html>
 
