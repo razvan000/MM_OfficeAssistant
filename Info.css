@@ -1,10 +1,10 @@
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 .grid-container{
     width: 70%;
-    
+
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 100vh;
@@ -14,19 +14,17 @@ html {
     cursor: pointer;
     margin-top: 1vh;
     display: block;
-    font-size: 20px;
+    font-size: 1vw;
     padding: 10px 24px;
     border-radius: 25px;
-    /* box-sizing: border-box; */
+
     color: #4095c6;
-    /* z-index: 2; */
+
     background-color:rgb(30, 30, 30); /*#4095c6*/
     border-color: #4095c6;
     border-style: solid;
     text-align:center;
-    /* position: fixed;
-    bottom: 5vh;
-    transform: translate(-50%, -50%); */
+
     font-family: 'Kanit';
     outline: none;
     text-shadow: #000 1px 1px 10px;
