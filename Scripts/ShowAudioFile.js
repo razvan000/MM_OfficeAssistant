@@ -6,6 +6,11 @@ text.style.visibility = "hidden";
 mpeg.style.visibility = "hidden";
 
 svg.onclick = function () {
-    text.style.visibility = "visible";
-    mpeg.style.visibility = "visible";
+    if (text.style.visibility == "visible" && mpeg.style.visibility == "visible") {
+        text.style.visibility = "hidden";
+        mpeg.style.visibility = "hidden";
+    } else {
+        text.style.visibility = "visible";
+        mpeg.style.visibility = "visible";
+    }
 }

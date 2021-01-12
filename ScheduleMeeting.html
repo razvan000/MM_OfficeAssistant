@@ -19,7 +19,7 @@
                 <label class="label" for="meetingName">Meeting Name:</label><br>
                 <input class="inputInfo" type="text" id="meetingName" name="meetingName"><br><br>
                 <label class="label" for="attendants">Attendants:</label><br>
-                <input class="inputInfo" type="text" id="attendants" name="attendants"><br><br>
+                <input class="inputInfo" type="text" id="attendants" name="attendants" ondrop="drop(event)" ondragover="allowDrop(event)"><br><br>
                 <label class="label" for="meetingTime">Select Time:</label><br>
                 <input class="inputInfo" type="datetime-local" id="meetingTime" name="meetingTime"><br><br>
                 <label class="label" for="location" id="locationLabel">Location:</label><br>
@@ -51,6 +51,15 @@
         </div>
         <script src="Scripts/CanvasTransition.js"></script>
         <script src="Scripts/ShowReserveButton.js"></script>
+        <div id="ColleaguesList">
+            <div id="listHeader">Drag and drop into Attendants</div>
+            <ul>
+                <li draggable="true" ondragstart="drag(event)">Laurentiu Naum</li>
+                <li draggable="true" ondragstart="drag(event)">Mateescu Razvan</li>
+                <li draggable="true" ondragstart="drag(event)">Mazzini Sebastian</li>
+                <li draggable="true" ondragstart="drag(event)">Alexandru Paiu</li>
+            </ul>
+        </div>
         <div id="reserveRoom">
             <div id="reserveRoomHeader">Office Layout</div>
             <div class="grid-container">
@@ -65,6 +74,7 @@
         </div>
         <script src="Scripts/SelectRoom.js"></script>
         <script src="Scripts/SaveMeeting.js"></script>
+        <script src="Scripts/ShowColleagues.js"></script>
     </body>
 </html>
 
